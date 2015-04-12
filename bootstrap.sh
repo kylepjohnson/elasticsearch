@@ -29,3 +29,10 @@ cd /opt/kibana
 # maybe: Open config/kibana.yml in an editor; set the elasticsearch_url to point at your Elasticsearch instance
 ./bin/kibana
 # curl http://yourhost.com:5601
+
+
+# install Python 3 from source
+curl -O https://raw.githubusercontent.com/kylepjohnson/python3_bootstrap/master/ubuntu14.sh
+chmod +x ubuntu14.sh
+./ubuntu14.sh
+
