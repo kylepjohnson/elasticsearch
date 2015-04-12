@@ -9,4 +9,3 @@ sudo apt-get install oracle-java8-installer
 curl -O https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.1.deb
 sudo dpkg --install elasticsearch-1.5.1.deb 
 sudo service elasticsearch start
-
