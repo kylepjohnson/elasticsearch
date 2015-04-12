@@ -14,12 +14,13 @@ ip_port = 'http://104.131.178.18:9200/'
 
 
 def ll_es_input(author_name, file_name, contents):
+    url = ip_port + 'latin_library/' + author_name + '/' + file_name
     data = {"name": author_name,
-            "text": file_name}
-    uri = ip_port + 'latin_library/' + author_name + '/' + file_name
-    print(uri)
-    print(data)
-    print(contents[:100])
+            "text_name": file_name,
+            "text": contents}
+    requests.post(url, json=data)
+    print(author_name)
+    os.wait(5)
 
 
 def open_file(filepath):
