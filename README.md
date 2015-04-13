@@ -126,6 +126,7 @@ curl -XGET 'http://104.131.178.18:9200/texts/text/_search?pretty=true' -d '
 
 [Highlighting docs](http://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html).
 
+See next: [Significant terms aggregation](https://www.elastic.co/blog/significant-terms-aggregation/).
 
 Document count:
 ```
