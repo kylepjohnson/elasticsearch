@@ -30,6 +30,9 @@ cd /opt/kibana
 ./bin/kibana
 # curl http://yourhost.com:5601
 
+# install marvel plugin
+# http://104.131.178.18:9200/_plugin/marvel
+/usr/share/elasticsearch/bin/plugin -i elasticsearch/marvel/latest
 
 # install Python 3 from source
 curl -O https://raw.githubusercontent.com/kylepjohnson/python3_bootstrap/master/ubuntu14.sh
