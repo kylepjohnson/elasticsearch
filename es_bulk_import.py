@@ -1,7 +1,9 @@
 from datetime import datetime
 #from elasticsearch import Elasticsearch
+import json
 import os
 import requests
+import time
 
 #es = Elasticsearch()
 #es.indices.create(index='latin_library', ignore=400)
@@ -18,14 +20,17 @@ def ll_es_input(author_name, file_name, contents):
     data = {"name": author_name,
             "text_name": file_name,
             "text": contents}
+    #requests.post(url, data=data)
+    #requests.post(url, data=json.dumps(data))
     requests.post(url, json=data)
     print(author_name)
-    os.wait(5)
+    print(url)
+    time.sleep(1)
 
 
 def open_file(filepath):
     with open(filepath, 'rb') as f:
-        return f.read()
+        return str(f.read())
 
 
 def crawl_ll():
