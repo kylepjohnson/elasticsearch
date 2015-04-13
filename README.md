@@ -115,16 +115,7 @@ curl -XGET 'http://104.131.178.18:9200/texts/text/_search?pretty=true' -d '
 }'
 ```
 
-… this returns matched search terms in `<em>` tags:
-
-```
-        "text" : [ " primo Eneidorum dicit 
-<em>Arma</em>
-<em>virumque</em>
-<em>cano</em> \\n-; alio modo secundum quod fabricata profertur vel ab" ]
-```
-
-[Highlighting docs](http://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html).
+… this returns matched search terms in `<em>` tags. ([Highlighting docs](http://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html).)
 
 See next: [Significant terms aggregation](https://www.elastic.co/blog/significant-terms-aggregation/).
 
